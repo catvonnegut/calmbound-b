@@ -1,0 +1,38 @@
+.modal_style {
+  width: 40rem;
+  max-width: 90%;
+  background: white;
+  box-shadow: 0 2px 8px rgb(0, 0, 0, 0.26);
+  position: fixed;
+  top: 20vh;
+  left: 5%;
+}
+
+.modal_header {
+  padding: 1rem;
+  color: black;
+  display: flex;
+}
+
+.modal_content {
+  padding: 1rem;
+}
+
+.modal_actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.image_placeholder {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  background-color: purple;
+}
+@media (min-width: 768px) {
+  .modal_style {
+    width: 30rem;
+    left: calc((100% - 30rem) / 2);
+  }
+}

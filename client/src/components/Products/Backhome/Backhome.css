@@ -1,0 +1,77 @@
+#bline {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  box-shadow: 0 2px 2px #fff;
+  flex-direction: column;
+  margin-top: -200px;
+  padding: 0px 0 200px 0;
+  text-align: center;
+  background: linear-gradient(white,rgb(173,233,223,.8), white);
+}
+.product-cake {
+  height: 100px;
+}
+
+.cakeflavor {
+  height: 80%;
+}
+
+.product-cake .cakeflavor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(173,233,223);
+}
+
+.cakeflavor p:hover {
+  background-color: rgb(173,233,223,0);
+  color: black;
+}
+
+.product-cake p {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  font-size: calc(10px + .8vmin);
+  text-align: center;
+}
+.cakeflavor p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  margin-left: -192px;
+  color: gray;
+  background-color: rgb(123,82,171,0);
+  font-weight: light;
+}
+
+.product-cake img {
+  margin-top: -10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.product-cake img:hover {
+  cursor: pointer;
+  opacity: .5;
+}
+
+.product-cake .name img:hover {
+  cursor: default;
+  opacity: 1;
+}
+
+.name img {
+  width: 250px;
+  height: 200px;
+  margin-bottom: -80px;
+  border: none;
+}
+
+h6 {
+  font-style: italic;
+  color: gray;
+}

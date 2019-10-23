@@ -1,0 +1,16 @@
+.email {
+  focus: hover;
+  margin-bottom: 50px;
+  text-align: center;
+  display: inline-block;
+  background-color: rgb(255,255,255,0);
+}
+
+.email:hover {
+  opacity: .5;
+}
+
+.icons img a {
+  margin-top: 0;
+  /* display: block; */
+}

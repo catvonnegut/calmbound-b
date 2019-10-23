@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.Navbar {
+  position: fixed;
+  top: -20px;
+  width: 100%;
+  margin: 0;
+  min-width: 840px;
+}
+
+.Navbar ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  color: rgb(216,227,236);
+  height: 50px;
+  padding: 10px 0 20px 0;
+  background-color: white;
+  opacity: 1;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  text-decoration: none;
+}
+
+.Navbar ul li {
+    list-style: none;
+    position: relative;
+    display:flex;
+    /* width: 50%; */
+    padding:14px 16px;
+    margin: 15px 0;
+    text-decoration: none;
+    text-transform: lowercase;
+    color: rgb(123,82,171);
+
+    font-weight: bold;
+    transition: .5s;
+}
+.Navbar ul li:before {
+  margin-top: -16px;
+  content: "";
+  position: absolute;
+color: rgb(216,227,236);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid rgb(123,82,171);
+  transform: scaleY(2);
+  opacity: 1;
+  transition: .5s;
+}
+.Navbar ul li:hover:before {
+  transform: scaleY(1.6);
+  opacity: 1;
+  color: rgb(123,82,171);
+  }
+
+.Navbar ul li:after {
+  content: "";
+  position: absolute;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  opacity: 1;
+  transition: .5s;
+  cursor: pointer;
+  color: gray;
+}
+
+.Navbar ul li:hover:after {
+  transform: scaleY(1);
+  opacity: .3;
+  font-weight: bold;
+  background-color: rgb(123,82,171);
+  color: gray;
+
+
+}
+
+div #logo {
+  cursor: pointer;
+  max-width: 200px;
+  max-height: 300px;
+  margin-top: 10px;
+  /* align-items: center; */
+}
+
+@media (max-width: 600px) {
+  .Navbar ul li {
+    opacity: 0;
+  }
+}

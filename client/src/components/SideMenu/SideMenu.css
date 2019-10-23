@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.side-menu {
+  height: 100%;
+  background: white;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 70%;
+  max-width: 300px;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  color: gray;
+  padding: 20px 0 20px 0;
+  opacity: 1;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.side-menu ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  color: gray;
+  padding: 5px 0 5px 0;
+  background-color: white;
+  opacity: 1;
+  /* box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5); */
+}
+
+.side-menu li {
+  margin: 0.5rem 0;
+  list-style: none;
+  position: relative;
+  display:block;
+  /* padding:14px 16px; */
+  /* margin: 20px 0; */
+  text-decoration: none;
+  text-transform: lowercase;
+  color: gray;
+  font-weight: bold;
+  transition: .5s;
+}
+
+.side-menu a {
+  /* color: black; */
+  text-decoration: none;
+  /* font-size: 1.2rem; */
+}
+
+.side-menu ul li {
+  list-style: none;
+  position: relative;
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  left: 40px;
+  padding:14px 16px;
+  margin: 20px 0;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: gray;
+  font-weight: bold;
+  transition: .5s;
+}
+
+.side-menu img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.side-menu a:hover {
+  /* background-color: palevioletred; */
+  color: purple;
+}
+
+.side-menu ul li:before {
+  content: "";
+  position: absolute;
+  color: gray;
+  top: 0;
+  left: 5%;
+  width: 40%;
+  height: 100%;
+  border-left: 1px solid rgb(123,82,171);
+  border-right: 1px solid rgb(123,82,171);
+
+  transform: scaleX(1.5);
+  opacity: 1;
+  transition: .5s;
+}
+.side-menu ul li:hover:before {
+  transform: scaleX(1);
+  opacity: .8;
+  }
+
+.side-menu ul li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 40%;
+  height: 100%;
+  transform: scaleX(0);
+  opacity: 1;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.side-menu ul li:hover:after {
+  transform: scaleX(1);
+  opacity: .2;
+  background-color: rgb(123,82,171);
+}
+
+.Navbar {
+  position: fixed;
+  top: -20px;
+  width: 100%;
+  margin: 0;
+  min-width: 840px;
+}
+
+.Navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  color: gray;
+  padding: 20px 0 20px 0;
+  background-color: white;
+  opacity: 1;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  text-decoration: none;
+}
