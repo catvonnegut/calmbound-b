@@ -22,8 +22,8 @@ app.post('/api/form', (req, res) => {
       port: 465,
       secure: true,
       auth: {
-        user: process.env.NODEMAILER_ADDRESS,
-        pass: process.env.NODEMAILER_PASSWORD
+        user: 'dnuobmlac@gmail.com',
+        pass: 'cbdthc420'
       }
     })
     let mailOptions = {

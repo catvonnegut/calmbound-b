@@ -9,9 +9,10 @@ class ContactForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
+      name: '',
       email: '',
-      message: ''
+      message: '',
+      buttonText: 'Submit'
     }
     this.handleTextInput = this.handleTextInput.bind(this)
     this.handleSubmitForm = this.handleSubmitForm.bind(this)
@@ -20,6 +21,20 @@ class ContactForm extends Component {
   handleTextInput = e => {
     this.setState({ [e.target.name]: e.target.value})
   }
+
+
+
+  handleClick = () => {
+    let buttonText = this.state.buttonText == 'Submit' ? 'Thank you!' : 'Submit'
+    this.setState({});
+    this.setState({
+      name: '',
+      email: '',
+      message: '',
+      buttonText: buttonText
+    });
+  }
+
 
   async handleSubmitForm(e) {
       e.preventDefault()
@@ -30,7 +45,8 @@ class ContactForm extends Component {
         email,
         message
       })
-    }
+
+  }
 
   render() {
     return (
@@ -68,11 +84,11 @@ class ContactForm extends Component {
               cols="26"
               name="message"
               onChange={this.handleTextInput}
-              value={this.state.address}
+              value={this.state.message}
               />
             </div>
 
-            <button>submit</button>
+            <button onClick={this.handleClick}>{this.state.buttonText}</button>
           </form>
 
         </div>

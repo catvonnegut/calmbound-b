@@ -30,8 +30,9 @@ body {
 }
 
 #buttercups {
-  margin-top: 400px;
-  max-width: 50%;
+  top: 0;
+  left: 0;
+  position: static;
 }
 
 .paraclass {
@@ -73,25 +74,18 @@ h2 {
   font-size: 1.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   #buttercups {
+    position: static;
     min-width: 100vw;
-    margin-top: 340px;
-    display: flex;
-    flex-direction: row;
-
-  }
-  #birds {
-    min-width: 50vw;
-    margin-top: 100px;
-    position: center;
+    margin-top: 330px;
     display: flex;
     flex-direction: row;
 
   }
 }
 
-@media (min-width: 601px) {
+@media (min-width: 501px) {
   .App-header, #buttercups, .paraclass {
     display: flex;
     flex-direction: row;

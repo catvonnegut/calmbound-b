@@ -3,7 +3,6 @@
 import React, { Component } from 'react';
 import sesame from '../../assets/sesame.jpg';
 import './Home.css'
-import birds from '../../assets/birds.png';
 
 class Home extends Component {
 
