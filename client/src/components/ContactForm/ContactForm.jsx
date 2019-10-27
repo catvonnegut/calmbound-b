@@ -28,9 +28,9 @@ class ContactForm extends Component {
     let buttonText = this.state.buttonText == 'Submit' ? 'Thank you!' : 'Submit'
     this.setState({buttonText: buttonText});
     this.setState({
-      name: this.name,
-      email: this.email,
-      message: this.message
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.message
     });
   }
 
