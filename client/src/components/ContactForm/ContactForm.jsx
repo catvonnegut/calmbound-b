@@ -26,12 +26,11 @@ class ContactForm extends Component {
 
   handleClick = () => {
     let buttonText = this.state.buttonText == 'Submit' ? 'Thank you!' : 'Submit'
-    this.setState({});
+    this.setState({buttonText: buttonText});
     this.setState({
-      name: '',
-      email: '',
-      message: '',
-      buttonText: buttonText
+      name: this.name,
+      email: this.email,
+      message: this.message
     });
   }
 
@@ -61,6 +60,7 @@ class ContactForm extends Component {
               <input
                 type="text"
                 name="name"
+                placeholder="name"
                 onChange={this.handleTextInput}
                 value={this.state.name}
               />
@@ -71,6 +71,7 @@ class ContactForm extends Component {
               <input
                 type="text"
                 name="email"
+                placeholder="email"
                 onChange={this.handleTextInput}
                 value={this.state.email}
               />
@@ -83,6 +84,7 @@ class ContactForm extends Component {
               rows="1"
               cols="26"
               name="message"
+              placeholder="message"
               onChange={this.handleTextInput}
               value={this.state.message}
               />
