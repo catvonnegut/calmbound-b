@@ -9,10 +9,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/", express.static("./build/"));
 
 if (process.env.NODE_ENV == "production") {
-  app.get("/*", function(request, response) {
-    response.sendFile(path.join(__dirname, "build", "index.html"));
+  app.get('/',function(req,res){
+      res.sendFile(__dirname + '/index.html');
   });
 }
+
 
 app.post('/api/form', (req, res) => {
   nodemailer.createTestAccount((err,account) => {
