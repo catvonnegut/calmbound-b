@@ -10,7 +10,7 @@ app.use("/", express.static("./build/"));
 
 if (process.env.NODE_ENV == "production") {
   app.get('/',function(req,res){
-      res.sendFile(__dirname + '/index.html');
+      res.sendFile(path.join(__dirname + '/index.html'));//need to find the correct response file
   });
 }
 
