@@ -6,6 +6,8 @@ const api = axios.create({
     baseURL: Base_URL
 })
 
+const proxy = require('http-proxy-middleware')
+
 
 export const getAllContacts= async () => {
     try{
