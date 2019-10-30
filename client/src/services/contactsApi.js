@@ -48,3 +48,13 @@ export const updateContact = async (id, data) => {
         console.log(e.message)
     }
 }
+
+export const deleteContact = async (id, data) => {
+    try{
+        const resp = await api.delete(`/(${id})`, data);
+        return resp.json
+    }
+    catch(e){
+        console.log(e.message)
+    }
+}
