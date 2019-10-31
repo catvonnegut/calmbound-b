@@ -6,11 +6,11 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use("/", express.static("./build/"));
+app.use("/", express.static("./client/build/"));
 
 if (process.env.NODE_ENV == "production") {
   app.get('/',function(req,res){
-      res.sendFile(path.join("./build/" + '/index.html'));//need to find the correct response file
+      res.sendFile(path.join("./client/build" + '/index.html'));//need to find the correct response file
   });
 }
 
