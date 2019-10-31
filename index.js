@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const path = require('path');
 const app = express();
+require('dotenv').config();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -15,8 +16,7 @@ app.get('*', (req, res) => {
 })
 
 app.post('/api/form', (req, res) => {
-  nodemailer.createTestAccount((err,account) => {
-    const htmlEmail = `
+  let htmlEmail = `
     <h3>Contact Details</h3>
     <ul>
       <li>Name: ${req.body.name}</li>
@@ -27,19 +27,15 @@ app.post('/api/form', (req, res) => {
     `
     let transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
-      port: 465,
-      secure: true,
       auth: {
-        user: 'dnuobmlac@gmail.com',
-        pass: 'cbdthc420'
+        user: process.env.USER,
+        pass: process.env.PASS
       }
     })
     let mailOptions = {
-      from: 'test@testaccount.com',
-      to: 'dnuobmlac@gmail.com',
-      replyTo: 'test@testaccount.com',
+      from: req.body.email,
+      to: process.env.USER,
       subject: 'New Message',
-      text: req.body.message,
       html: htmlEmail
     }
 
