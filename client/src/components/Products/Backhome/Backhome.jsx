@@ -1,7 +1,7 @@
 import React from 'react';
 import './Backhome.css';
-import chocolateCake from '../../../assets/chocolateCake.jpg';
-import coffeeCake from '../../../assets/coffeeCake.jpg';
+import chocolateCake from '../../../assets/chocolateCake.PNG';
+import coffeeCake from '../../../assets/coffeeCake.PNG';
 import backhome from '../../../assets/backhome.png';
 
 

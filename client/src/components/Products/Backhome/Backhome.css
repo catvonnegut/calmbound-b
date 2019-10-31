@@ -56,7 +56,7 @@
 }
 
 .product-cake img:hover {
-  cursor: pointer;
+  cursor: default;
   opacity: .5;
 }
 

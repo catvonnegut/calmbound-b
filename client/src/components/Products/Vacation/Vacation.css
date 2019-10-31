@@ -63,7 +63,7 @@
 
 
 .product-choc img:hover {
-  cursor: pointer;
+  cursor: default;
   opacity: .5;
 }
 

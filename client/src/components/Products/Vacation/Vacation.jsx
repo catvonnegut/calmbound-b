@@ -1,8 +1,8 @@
 import React from 'react';
 import './Vacation.css';
-import maple from '../../../assets/maple.jpg';
-import orange from '../../../assets/orange.jpg';
-import sesame from '../../../assets/sesame.jpg';
+import maple from '../../../assets/maple.PNG';
+import orange from '../../../assets/orange.PNG';
+import sesame from '../../../assets/sesame.PNG';
 import vacation from '../../../assets/vacation.png';
 
 
