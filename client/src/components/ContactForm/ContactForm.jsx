@@ -60,7 +60,6 @@ class ContactForm extends Component {
               <input
                 type="text"
                 name="name"
-                placeholder="name"
                 onChange={this.handleTextInput}
                 value={this.state.name}
               />
@@ -71,7 +70,6 @@ class ContactForm extends Component {
               <input
                 type="text"
                 name="email"
-                placeholder="email"
                 onChange={this.handleTextInput}
                 value={this.state.email}
               />
@@ -84,7 +82,6 @@ class ContactForm extends Component {
               rows="1"
               cols="26"
               name="message"
-              placeholder="message"
               onChange={this.handleTextInput}
               value={this.state.message}
               />
