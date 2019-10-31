@@ -22,6 +22,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   background-color: rgb(173,233,223);
+  opacity: 1;
 }
 
 .cakeflavor p:hover {

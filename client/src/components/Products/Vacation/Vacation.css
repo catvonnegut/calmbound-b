@@ -32,6 +32,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   background-color: rgb(36,106,216);
+  opacity: 1;
 }
 
 .chocoflavor p {
@@ -74,5 +75,8 @@
 @media (min-width: 400px) {
   .wrapper {
     margin-top: 320px;
+  }
+  #vline {
+    margin-top: -50px;
   }
 }
