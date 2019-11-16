@@ -26,6 +26,9 @@
   height: 80%;
 }
 
+.name {
+  margin-top: -100px;
+}
 
 .product-choc .chocoflavor {
   display: flex;
@@ -78,5 +81,8 @@
   }
   #vline {
     margin-top: -50px;
+  }
+  .name {
+    margin-top: 10px;
   }
 }

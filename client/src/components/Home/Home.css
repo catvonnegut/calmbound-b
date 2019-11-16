@@ -10,7 +10,8 @@ body {
 
 .App-header, p {
   background-color: rgb(255, 255, 255);
-  max-height: 100vh;
+  max-height: 50vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,8 +22,8 @@ body {
   text-decoration: none;
 }
 
-#buttercups {
-  margin-top: 200px;
+#headerPhoto {
+  margin-top: 420px;
   top: 0;
   left: 0;
   max-width: 70%;
@@ -32,24 +33,27 @@ body {
   /* display: flex; */
   /* flex-direction: column; */
   max-width: 70%;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   background-color: rgba(255, 255, 255, .5);
   /* z-index: 100px; */
 }
 
-.App-header img {
-  margin-top: 150px;
-  margin-bottom: -100px;
+.App-header #headerPhoto {
+  /* margin-top: 150px; */
+  /* margin-bottom: -100px; */
   max-width: 70%;
   max-height: 20%;
 }
 
+
+
 #birds {
+  /* position: absolute; */
+  height: inherit;
+  max-width: 30vw;
+  pointer-events: none;
   display: flex;
-  justify-content: center;
-  position: center;
-  max-width: 65%;
-  max-height: 20%;
+  opacity: 1;
 }
 
 .Main-Home {
@@ -69,10 +73,10 @@ h2 {
 }
 
 @media (max-width: 500px) {
-  #buttercups {
-    position: static;
+  #headerPhoto {
+    /* position: static; */
     min-width: 100vw;
-    margin-top: 330px;
+    /* margin-top: 330px; */
     display: flex;
     flex-direction: row;
 
@@ -80,7 +84,7 @@ h2 {
 }
 
 @media (min-width: 501px) {
-  .App-header, #buttercups, .paraclass {
+  .App-header, #headerPhoto, .paraclass {
     display: flex;
     flex-direction: row;
     text-align: left;
@@ -89,6 +93,18 @@ h2 {
     display: flex;
     flex-direction: column;
     text-align: left;
+  }
+  #birds {
+    /* position: absolute; */
+    height: inherit;
+    max-width: 30vw;
+    pointer-events: none;
+    display: flex;
+    opacity: 0;
+    margin-bottom: -25px;
+  }
+  #headerPhoto {
+    margin-top: 620px;
   }
 
 }

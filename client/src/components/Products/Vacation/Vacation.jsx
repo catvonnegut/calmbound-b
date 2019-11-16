@@ -3,7 +3,7 @@ import './Vacation.css';
 import maple from '../../../assets/maple.PNG';
 import orange from '../../../assets/orange.PNG';
 import sesame from '../../../assets/sesame.PNG';
-import vacation from '../../../assets/vacation.png';
+import vacation from '../../../assets/vacation_blue_fill.png';
 
 
 

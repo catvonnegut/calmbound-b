@@ -1,9 +1,11 @@
+footer {
+  background-color: linear-gradient(white,rgb(215, 227, 236));
+}
 .email {
   focus: hover;
   margin-bottom: 50px;
   text-align: center;
   display: inline-block;
-  background-color: rgb(255,255,255,0);
 }
 
 .email:hover {
