@@ -23,6 +23,8 @@
   justify-content: space-evenly;
   background-color: rgb(173,233,223);
   opacity: 1;
+  margin-top: 20px;
+
 }
 
 .cakeflavor p:hover {
@@ -42,17 +44,19 @@
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 60px;
-  margin-left: -192px;
+  /* margin-left: -192px; */
   color: gray;
   background-color: rgb(123,82,171,0);
   font-weight: light;
 }
 
-.product-cake img {
-  margin-top: -10px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+.product-cake .cakeflavor img {
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -30px;
+  max-width: 140px;
+  min-height: 140px;
+  /* border-radius: 50%; */
 }
 
 .product-cake img:hover {
@@ -72,7 +76,7 @@
   border: none;
 }
 
-h6 {
+h5 {
   font-style: italic;
   color: gray;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Backhome.css';
-import chocolateCake from '../../../assets/chocolateCake.PNG';
-import coffeeCake from '../../../assets/coffeeCake.PNG';
+import chocolateCake from '../../../assets/Chocolate-Cake.png';
+import coffeeCake from '../../../assets/Cinnamon-Coffee-Cake.png';
 import backhome from '../../../assets/backhome.png';
 
 
@@ -13,13 +13,11 @@ function Backhome(props) {
       <div className="name">
         <img src={backhome} alt='backhome product image'/>
       </div>
-      <h6>{props.line}</h6>
+      <h5>{props.line}</h5>
       <div className="cakeflavor">
         <img src={coffeeCake} alt='cinnamon coffee cake mix' onClick={props.click}/>
-        <p>{props.flavor1}</p>
 
         <img src={chocolateCake} alt='chocolate cake mix' onClick={props.click}/>
-        <p>{props.flavor2}</p>
       </div>
     </div>
 

@@ -20,10 +20,10 @@ class Header extends Component {
             <img id="logo" src={calmboundLogo} alt='logo'/>
           </div>
           </Link>
-          <Link to='/chocolates'>
+          <Link to='/products'>
             <li>chocolates</li>
           </Link>
-          <Link to='/cake-mixes'>
+          <Link to='/about-us'>
             <li>cake mixes</li>
           </Link>
           <Link to='/contact-us'>

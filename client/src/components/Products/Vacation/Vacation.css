@@ -1,5 +1,5 @@
 .wrapper {
-  margin-top: 320px;
+  margin-top: 420px;
   display: flex;
   width: 100vw;
   height: 50%;
@@ -12,7 +12,7 @@
   width: 100vw;
   box-shadow: 0 2px 2px #fff;
   flex-direction: column;
-  margin: 0px 0px -100px 0px;
+  margin: 0px 0px -200px 0px;
   padding: 50px 0 200px 0;
   text-align: center;
   background: linear-gradient(white,rgb(36,106,216,.4), white);
@@ -27,7 +27,7 @@
 }
 
 .name {
-  margin-top: -100px;
+  margin-top: 0px;
 }
 
 .product-choc .chocoflavor {
@@ -36,6 +36,7 @@
   justify-content: space-evenly;
   background-color: rgb(36,106,216);
   opacity: 1;
+  margin-top: 20px;
 }
 
 .chocoflavor p {
@@ -48,11 +49,10 @@
   color: gray;
 }
 
-.product-choc img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-top: -10px;
+.product-choc .chocoflavor img {
+  max-width: 125px;
+  min-height: 125px;
+  margin-top: -30px;
 }
 .product-choc p {
   height: 100px;
@@ -75,14 +75,13 @@
   opacity: 1;
 }
 
-@media (min-width: 400px) {
-  .wrapper {
-    margin-top: 320px;
-  }
-  #vline {
-    margin-top: -50px;
-  }
-  .name {
-    margin-top: 10px;
-  }
+h5 {
+  font-style: italic;
+  color: gray;
 }
+
+/* @media (min-width: 415px) {
+  #vline {
+    margin-top: -200px;
+  }
+} */

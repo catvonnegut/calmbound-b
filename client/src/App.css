@@ -1,25 +1,6 @@
 .App {
   text-align: center;
 }
-.App-header {
-  background-color: white;
-  /* max-height: 50vh; */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(123,82,171);
-}
-
-/* #logo {
-  position: relative;
-  height: inherit;
-  width: 100vw;
-  pointer-events: none;
-  display: flex;
-  opacity: 1;
-} */
-
 
 
 #logo img {
@@ -30,41 +11,11 @@
   display: flex;
   opacity: 1;
   position:absolute;
-  /* left:0; */
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
-
-/* #logo img.bottom {
-  margin-top: 9px;
-} */
-
-/* #logo img.top:hover {
-  opacity:0;
-} */
-
-
-
-/* .bottom {
-  position: absolute;
-  height: inherit;
-  width: 100vw;
-  pointer-events: none;
-  display: flex;
-  opacity: 1;
-} */
-
-/* .top {
-  position: absolute;
-
-  height: inherit;
-  width: 100vw;
-  pointer-events: none;
-  display: flex;
-  opacity: .5;
-} */
 
 .Social {
   margin-top: 0px;
