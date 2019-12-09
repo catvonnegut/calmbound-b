@@ -25,7 +25,7 @@ class ContactForm extends Component {
 
 
   handleClick = () => {
-    let buttonText = this.state.buttonText == 'Submit' ? 'Thank you!' : 'Submit'
+    let buttonText = this.state.buttonText === 'Submit' ? 'Thank you!' : 'Submit'
     this.setState({buttonText: buttonText});
     this.setState({
       name: this.state.name,

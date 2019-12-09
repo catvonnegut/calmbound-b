@@ -3,13 +3,13 @@ import calmboundLogo from '../../assets/calmboundLogo.png';
 import { Link } from 'react-router-dom';
 import './Header.css'
 import DrawerToggleButton from '../SideMenu/DrawerToggleButton'
-
+import headerPhoto from '../../assets/headerPhoto@3x.png';
 
 
 class Header extends Component {
       render() {
         return (
-
+      <div>
         <div className="Navbar">
         <ul>
         <div>
@@ -30,7 +30,12 @@ class Header extends Component {
             <li>contact us</li>
           </Link>
         </ul>
+
       </div>
+      <div className="headerPhoto">
+        <img id="headerPhoto" src={headerPhoto} alt='sesame buttercups'/>
+      </div>
+    </div>
     )
   }
 }

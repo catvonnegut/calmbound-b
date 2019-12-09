@@ -13,7 +13,6 @@ class Home extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img id="headerPhoto" src={headerPhoto} alt='sesame buttercups'/>
             <div className="paraclass">
               <p>
               calmbound is a maker of transformative plant-based goods based in the beautiful state of Maine. All of our products are top 8 allergen-free because we believe that the power of the plant is optimized when paired with the best ingredients for everyone.

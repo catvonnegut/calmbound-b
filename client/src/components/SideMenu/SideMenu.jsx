@@ -17,18 +17,18 @@ const sideMenu = props => (
       <img src={calmboundLogo} alt=''/>
     </Link>
       <Link
-        to='/chocolates'
+        to='/products'
         onClick={props.drawerClickHandler}>
         <li><>&nbsp;</><>&nbsp;<>&nbsp;</>
-        <>&nbsp;</><>&nbsp;</></>chocolates</li>
+        <>&nbsp;</><>&nbsp;</></>products</li>
       </Link>
       <Link
-        to='/cake mixes'
+        to='/about us'
         onClick={props.drawerClickHandler}>
         <li>
         <>&nbsp;</>
         <>&nbsp;</>
-        cake mixes
+        about us
         <>&nbsp;</>
         <>&nbsp;</>
         </li>
