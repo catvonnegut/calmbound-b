@@ -9,12 +9,10 @@ body {
 }
 
 .App-header {
-  /* margin-top: -210px; */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(123,82,171);
-
 }
 
 .App-header, p {
@@ -29,22 +27,13 @@ body {
   text-decoration: none;
 }
 
-.App-header #headerPhoto {
-  max-width: 70%;
-  max-height: 20%;
-}
-
 .paraclass {
   max-width: 70%;
+  margin-top: 20px;
   background-image: url('../../assets/hemp@3x.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.App-header #headerPhoto {
-  max-width: 70%;
-  max-height: 20%;
 }
 
 h2 {
@@ -57,30 +46,39 @@ h2 {
   }
   .App-header {
     /* margin-top: -370px; */
-    padding-bottom: 0px;
+    /* padding-bottom: 0px; */
   }
   .paraclass {
     display: none;
   }
-
 }
 
-@media (min-width: 320px) {
+@media (max-width: 320px) {
+  .paraclass {
+    margin-top: 100px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: 321px max-width: 600px) {
   .App-header {
-    /* margin-top: -190px; */
+    margin-top: -200px;
     padding-bottom: 50px;
   }
   #headerPhoto {
     min-width: 100vw;
   }
+  .App-header, .paraclass {
+    margin-top: 20px;
+  }
 }
 
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
   .App-header {
-    /* margin-top: -170px; */
+    margin-top: -170px;
     padding-bottom: 80px;
   }
   #headerPhoto {
     min-width: 100vw;
   }
-}
+} */

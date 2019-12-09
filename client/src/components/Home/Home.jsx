@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 // import sesame from '../../assets/sesame.jpg';
 import './Home.css'
-import headerPhoto from '../../assets/headerPhoto@3x.png';
+// import headerPhoto from '../../assets/headerPhoto@3x.png';
 
 class Home extends Component {
 

@@ -21,10 +21,10 @@ class Header extends Component {
           </div>
           </Link>
           <Link to='/products'>
-            <li>chocolates</li>
+            <li>products</li>
           </Link>
           <Link to='/about-us'>
-            <li>cake mixes</li>
+            <li>about us</li>
           </Link>
           <Link to='/contact-us'>
             <li>contact us</li>
@@ -32,7 +32,7 @@ class Header extends Component {
         </ul>
 
       </div>
-      <div className="headerPhoto">
+      <div className="App-header">
         <img id="headerPhoto" src={headerPhoto} alt='sesame buttercups'/>
       </div>
     </div>
