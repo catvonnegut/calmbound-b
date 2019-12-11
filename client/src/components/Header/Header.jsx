@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import calmboundLogo from '../../assets/calmboundLogo.png';
+import calmboundLogo from '../../assets/calmboundLogo.webp';
 import { Link } from 'react-router-dom';
 import './Header.css'
 import DrawerToggleButton from '../SideMenu/DrawerToggleButton'
-import headerPhoto from '../../assets/headerPhoto@3x.png';
+import headerPhoto from '../../assets/headerPhoto@3x.webp';
 
 
 class Header extends Component {

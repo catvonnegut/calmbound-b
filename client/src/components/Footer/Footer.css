@@ -1,12 +1,15 @@
-footer {
+.icons {
   background-color: linear-gradient(white,rgb(215, 227, 236));
 }
-.email {
+.bottom {
   focus: hover;
   margin-bottom: 50px;
   text-align: center;
   display: inline-block;
+  background-color: linear-gradient(white,rgb(215, 227, 236));
+
 }
+
 
 .email:hover {
   opacity: .5;

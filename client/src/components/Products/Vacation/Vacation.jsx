@@ -1,9 +1,9 @@
 import React from 'react';
 import './Vacation.css';
-import maple from '../../../assets/maple.PNG';
-import orange from '../../../assets/Orange-Ganache.png';
-import sesame from '../../../assets/sesame.PNG';
-import vacation from '../../../assets/vacation_blue_fill.png';
+import maple from '../../../assets/maple.webp';
+import orange from '../../../assets/Orange-Ganache.webp';
+import sesame from '../../../assets/sesame.webp';
+import vacation from '../../../assets/vacation_blue_fill.webp';
 
 
 
