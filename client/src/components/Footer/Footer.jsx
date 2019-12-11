@@ -1,6 +1,6 @@
 import React from 'react';
-import instagram from '../../instagram.webp';
-import calmboundLogo from '../../assets/calmboundLogo.webp';
+import instagram from '../../instagram.png';
+import calmboundLogo from '../../assets/calmboundLogo.png';
 
 import './Footer.css';
 

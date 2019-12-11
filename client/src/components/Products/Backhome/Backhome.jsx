@@ -1,8 +1,8 @@
 import React from 'react';
 import './Backhome.css';
-import chocolateCake from '../../../assets/Chocolate-Cake.webp';
-import coffeeCake from '../../../assets/Cinnamon-Coffee-Cake.webp';
-import backhome from '../../../assets/backhome.webp';
+import chocolateCake from '../../../assets/Chocolate-Cake.png';
+import coffeeCake from '../../../assets/Cinnamon-Coffee-Cake.png';
+import backhome from '../../../assets/backhome.png';
 
 
 

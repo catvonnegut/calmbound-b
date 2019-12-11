@@ -1,9 +1,9 @@
 import React from 'react';
 import './Vacation.css';
 import maple from '../../../assets/maple.webp';
-import orange from '../../../assets/Orange-Ganache.webp';
-import sesame from '../../../assets/sesame.webp';
-import vacation from '../../../assets/vacation_blue_fill.webp';
+import orange from '../../../assets/Orange-Ganache.png';
+import sesame from '../../../assets/sesame.png';
+import vacation from '../../../assets/vacation_blue_fill.png';
 
 
 
@@ -16,9 +16,9 @@ function Vacation(props) {
     </div>
       <h5>{props.line}</h5>
       <div className="chocoflavor">
-        <img src={maple} alt='image of smoked maple sea salt chocolates'/>
-        <img src={orange} alt='image of orange chocolate ganache'/>
-        <img src={sesame} alt='image of sesame buttercups'/>
+        <img src={maple} alt='smoked maple sea salt chocolates'/>
+        <img src={orange} alt='orange chocolate ganache'/>
+        <img src={sesame} alt='sesame buttercups'/>
 
       </div>
     </div>

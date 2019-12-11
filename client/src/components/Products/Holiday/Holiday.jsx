@@ -1,10 +1,10 @@
 import React from 'react';
 import './Holiday.css';
-import maple from '../../../assets/maple.webp';
-import orange from '../../../assets/Orange-Ganache.webp';
-import sesame from '../../../assets/sesame.webp';
-import holiday from '../../../assets/holiday.webp';
-import xmastree from '../../../assets/xmas-tree.webp';
+import maple from '../../../assets/maple.png';
+import orange from '../../../assets/Orange-Ganache.png';
+import sesame from '../../../assets/sesame.png';
+import holiday from '../../../assets/holiday.png';
+import xmastree from '../../../assets/xmas-tree.png';
 
 
 
