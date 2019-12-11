@@ -1,6 +1,6 @@
 import React from 'react';
 import './Vacation.css';
-import maple from '../../../assets/maple.png';
+import maple from '../../../assets/maple.PNG';
 import orange from '../../../assets/Orange-Ganache.png';
 import sesame from '../../../assets/sesame.png';
 import vacation from '../../../assets/vacation_blue_fill.png';
