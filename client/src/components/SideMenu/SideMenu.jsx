@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import birds from '../../assets/birds.png'
-import calmboundLogo from '../../assets/calmboundLogo.png'
+import calmboundLogo from '../../assets/calmboundLogo-.png'
 
 
 import './SideMenu.css';
