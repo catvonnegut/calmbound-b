@@ -29,7 +29,8 @@ body {
 
 .paraclass {
   max-width: 70%;
-  margin-top: 20px;
+  margin-top: 25px;
+  padding-bottom: 15px;
   background-image: url('../../assets/hemp@3x-.png');
   background-size: 100%;
   background-repeat: no-repeat;
