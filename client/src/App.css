@@ -19,24 +19,22 @@
 
 .Social {
   margin-top: 0px;
-  padding-bottom: -10px;
+  /* padding-bottom: -10px; */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   cursor: pointer;
   width: 10vh;
   height: 10vh;
 }
 
-.icons {
-  margin-top: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
 .App-link {
   color: rgb(89,167,252);
   font-weight: bold;
   cursor: pointer;
+}
+
+p, a {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }

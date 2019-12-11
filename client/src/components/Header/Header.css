@@ -111,12 +111,17 @@ div #logo {
   .Navbar ul li {
     opacity: 0;
   }
-  .#headerPhoto {
+  #headerPhoto {
     margin-top: 86px;
     min-width: 100vw;
   }
 }
 
 @media (max-width: 600px) {
+  #headerPhoto {
+    margin-top: 86px;
+    max-width: 65vw;
+    max-height: 200px;
 
+  }
 }
