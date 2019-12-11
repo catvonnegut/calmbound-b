@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer.jsx';
 import Home from './components/Home/Home.jsx';
 import Vacation from './components/Products/Vacation/Vacation.jsx';
 import Backhome from './components/Products/Backhome/Backhome.jsx';
+import Holiday from './components/Products/Holiday/Holiday.jsx';
 import SideMenu from './components/SideMenu/SideMenu';
 import Backdrop from './components/Backdrop/Backdrop';
 import DrawerToggleButton from './components/SideMenu/DrawerToggleButton';
@@ -78,6 +79,13 @@ class App extends Component {
       line="Tastes as good as home feels."
       flavor1="cinnamon coffee cake"
       flavor2="chocolate cake"
+      />
+      <Holiday
+      modalToggleClickHandler={this.modalToggleClickHandler}
+      name="holiday"
+      line="A seasonal take on our chocolates and cakes."
+      flavor1="Gingerbread Coffee Cake"
+      flavor2="Mint Mocha Ganache"
       />
       <ContactForm/>
       <Footer />

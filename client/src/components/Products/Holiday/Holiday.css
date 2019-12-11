@@ -1,0 +1,83 @@
+.wrapper {
+  display: flex;
+  width: 100vw;
+  height: 50%;
+  justify-content: center;
+}
+
+#hline {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  box-shadow: 0 2px 2px #fff;
+  flex-direction: column;
+  margin: -500px 0px 0px 0px;
+  padding: 50px 0 200px 0;
+  text-align: center;
+  background: linear-gradient(white,rgb(216,227,236,1), white);
+}
+
+.product-holiday {
+  height: 100px;
+}
+
+.holidayflavor {
+  height: 80%;
+}
+
+.name {
+  margin-top: 0px;
+  border-radius: 50%;
+  border-width: black medium;
+}
+
+.product-holiday .holidayflavor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(216,227,236);
+  opacity: 1;
+  margin-top: 20px;
+}
+
+.holidayflavor p {
+  margin-top: 0px;
+  border-radius: 50%;
+  border-width: thick black;
+}
+
+.holidayflavor p:hover {
+  background-color: rgb(36,106,216,0);
+  color: gray;
+}
+
+.product-holiday .holidayflavor img {
+  max-width: 125px;
+  min-height: 125px;
+  margin-top: -30px;
+}
+.product-holiday p {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  font-size: calc(10px + .8vmin);
+  text-align: center;
+  background-color: rgb(255,255,255, 0);
+  font-weight: light;
+}
+
+
+.product-holiday img:hover {
+  cursor: default;
+  opacity: .5;
+}
+
+.product-holiday .name img:hover {
+  cursor: default;
+  opacity: 1;
+}
+
+h5 {
+  font-style: italic;
+  color: gray;
+}

@@ -1,5 +1,6 @@
 .Main-Contact {
   display: flex;
+  margin-top: -100px;
   justify-content: center;
   align-items: center;
   max-height: 50%;
