@@ -1,6 +1,6 @@
 import React from 'react';
 import './Holiday.css';
-import holiday from '../../../assets/holiday-.png';
+import holiday from '../../../assets/holiday.png';
 import xmastree from '../../../assets/xmas-tree-.png';
 
 
