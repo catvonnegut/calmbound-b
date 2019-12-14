@@ -1,11 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .modal_style {
   width: 40rem;
   max-width: 90%;
+  z-index: 200;
   background: white;
   box-shadow: 0 2px 8px rgb(0, 0, 0, 0.26);
+  border: 2pt solid rgb(216,227,236);
   position: fixed;
   top: 20vh;
   left: 5%;
+}
+.close_modal {
+  margin-left: 300px;
+  color: purple;
+}
+
+.modal_content button {
+  padding: 0;
+  border: 0;
+}
+
+.counter {
+  margin-right: 110px;
+  padding-bottom: 0px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
 }
 
 .modal_header {
@@ -14,8 +38,16 @@
   display: flex;
 }
 
+.add {
+  margin-left: 10px;
+}
+
 .modal_content {
   padding: 1rem;
+}
+
+.buyWholesale {
+  margin-left: 10px;
 }
 
 .modal_actions {
@@ -24,15 +56,24 @@
   padding: 1rem;
 }
 
-.image_placeholder {
-  width: 6.5rem;
-  height: 6.5rem;
-  border-radius: 50%;
-  background-color: purple;
+.modal_actions button {
+  padding: 0;
+  border: 0;
 }
+
+.image_placeholder {
+  width: 9.5rem;
+  height: 9.5rem;
+  border-radius: 50%;
+  background-image: url('../../assets/xmas-tree-.png');
+  background-repeat: no-repeat
+
+}
+
+
 @media (min-width: 768px) {
   .modal_style {
-    width: 30rem;
-    left: calc((100% - 30rem) / 2);
+    width: 20rem;
+    left: calc((100% - 20rem) / 2);
   }
 }
