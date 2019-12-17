@@ -1,21 +1,31 @@
 const express = require('express');
+const logger = require('morgan');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const path = require('path');
 const app = express();
 require('dotenv').config();
+const { productsApi } = require('./client/src/services/productsApi.js');
+
+
+app.use('/products', productsApi)
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cors())
+app.use(bodyParser.json())
+// log requests to the console in dev mode
+app.use(logger(‘dev’));
 
 // Serve static files from the React frontend app
-app.use(express.static(path.join(__dirname, 'client/build')))
+app.use(express.static(path.join(__dirname, 'client/src/assets')))
 // Anything that doesn't match the above, send back index.html
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/client/build/index.html'))
 })
 
-app.post('/api/form', (req, res) => {
+app.post('/contacts', (req, res) => {
   let htmlEmail = `
     <h3>Contact Details</h3>
     <ul>

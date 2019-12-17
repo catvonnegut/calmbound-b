@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const Base_URL = 'http://localhost:3001'
+const Base_URL = 'http://localhost:3001/contacts'
 
 const api = axios.create({
     baseURL: Base_URL
@@ -11,7 +11,7 @@ const proxy = require('http-proxy-middleware')
 
 export const getAllContacts= async () => {
     try{
-        const resp = await api.get('/api/form');
+        const resp = await api.get('/');
         console.log(resp.json);
         return resp.json;
     }
