@@ -6,9 +6,12 @@ const path = require('path');
 const app = express();
 require('dotenv').config();
 const { productsApi } = require('./client/src/services/productsApi.js');
+const { contactsApi } = require('./client/src/services/contactsApi.js');
 
 
 app.use('/products', productsApi)
+app.use('/api/form', contactsApi)
+
 
 
 app.use(bodyParser.json());
@@ -25,7 +28,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname + '/client/build/index.html'))
 })
 
-app.post('/contacts', (req, res) => {
+app.post('/api/form', (req, res) => {
   let htmlEmail = `
     <h3>Contact Details</h3>
     <ul>
